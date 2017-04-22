@@ -24,6 +24,8 @@ class DatabaseConnections
      * @param $position
      * @param $visibility
      */
+
+    //To insert a subject OOP style.
     public function insertASubject($menuName,
                                    $position, $visibility)
     {
@@ -34,6 +36,7 @@ class DatabaseConnections
         $stmt->close();
     }
 
+    //To insert a page OOP style.
     public function insertAPage($subjectID,$menuName,$position
     ,$visibility,$content)
     {
@@ -46,6 +49,7 @@ class DatabaseConnections
             $content);
         $stmt->execute();
         $stmt->close();
+
 
 
     }

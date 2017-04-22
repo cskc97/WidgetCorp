@@ -54,6 +54,22 @@ class DatabaseConnections
 
     }
 
+    public function queryNamesOfPages()
+    {
+     $sqlQuery = "SELECT menuname
+     FROM pages;";
+     $returnArray[]=null;
+     $result=$this->databaseConnection->query($sqlQuery);
+     while($row=$result->fetch_assoc())
+     {
+         $returnArray[]=$row["menuname"];
+     }
+     echo "<pre>".$returnArray."</pre>";
+
+     return $returnArray;
+
+    }
+
 
     public function __destruct()
     {

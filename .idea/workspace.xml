@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5881dd98-9f1d-401f-9c95-01aaad79493d" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/database_connections.php" afterPath="$PROJECT_DIR$/includes/database_connections.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,14 +31,15 @@
       <file leaf-file-name="database_connections.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/includes/database_connections.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="598">
-              <caret line="50" column="5" lean-forward="true" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
+            <state relative-caret-position="488">
+              <caret line="68" column="25" lean-forward="false" selection-start-line="68" selection-start-column="25" selection-end-line="68" selection-end-column="25" />
               <folding>
                 <element signature="e#6#88#0#PHP" expanded="true" />
-                <marker date="1492883370364" expanded="true" signature="576:613" ph="INSERT INTO subjects... " />
-                <marker date="1492883370364" expanded="true" signature="576:615" ph="INSERT INTO subjects... " />
-                <marker date="1492883370364" expanded="true" signature="576:617" ph="INSERT INTO subjects... " />
-                <marker date="1492883370364" expanded="true" signature="936:1033" ph="INSERT INTO pages" />
+                <marker date="1492884863840" expanded="true" signature="614:651" ph="INSERT INTO subjects... " />
+                <marker date="1492884863840" expanded="true" signature="614:653" ph="INSERT INTO subjects... " />
+                <marker date="1492884863840" expanded="true" signature="614:655" ph="INSERT INTO subjects... " />
+                <marker date="1492884863840" expanded="true" signature="1008:1105" ph="INSERT INTO pages" />
+                <marker date="1492884863840" expanded="true" signature="1434:1465" ph="SELECT menun... pages" />
               </folding>
             </state>
           </provider>
@@ -119,6 +121,16 @@
     <panes>
       <pane id="ProjectPane">
         <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WidgetCorp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WidgetCorp" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="WidgetCorp" />
@@ -277,7 +289,7 @@
       <option name="presentableId" value="Default" />
       <updated>1492341645637</updated>
       <workItem from="1492341646857" duration="4997000" />
-      <workItem from="1492882935777" duration="537000" />
+      <workItem from="1492882935777" duration="1676000" />
     </task>
     <task id="LOCAL-00001" summary="working on db">
       <created>1492346634646</created>
@@ -286,17 +298,24 @@
       <option name="project" value="LOCAL" />
       <updated>1492346634646</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="working on db">
+      <created>1492883570758</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1492883570758</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5534000" />
+    <option name="totallyTimeSpent" value="6673000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="914" y="0" width="973" height="1038" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11623037" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.313089" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -344,10 +363,11 @@
           <caret line="15" column="5" lean-forward="false" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
           <folding>
             <element signature="e#6#88#0#PHP" expanded="true" />
-            <marker date="1492883370364" expanded="true" signature="576:613" ph="INSERT INTO subjects... " />
-            <marker date="1492883370364" expanded="true" signature="576:615" ph="INSERT INTO subjects... " />
-            <marker date="1492883370364" expanded="true" signature="576:617" ph="INSERT INTO subjects... " />
-            <marker date="1492883370364" expanded="true" signature="936:1033" ph="INSERT INTO pages" />
+            <marker date="1492884863840" expanded="true" signature="614:651" ph="INSERT INTO subjects... " />
+            <marker date="1492884863840" expanded="true" signature="614:653" ph="INSERT INTO subjects... " />
+            <marker date="1492884863840" expanded="true" signature="614:655" ph="INSERT INTO subjects... " />
+            <marker date="1492884863840" expanded="true" signature="1008:1105" ph="INSERT INTO pages" />
+            <marker date="1492884863840" expanded="true" signature="1434:1465" ph="SELECT menun... pages" />
           </folding>
         </state>
       </provider>
@@ -498,14 +518,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/includes/database_connections.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="50" column="5" lean-forward="true" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
+        <state relative-caret-position="488">
+          <caret line="68" column="25" lean-forward="false" selection-start-line="68" selection-start-column="25" selection-end-line="68" selection-end-column="25" />
           <folding>
             <element signature="e#6#88#0#PHP" expanded="true" />
-            <marker date="1492883370364" expanded="true" signature="576:613" ph="INSERT INTO subjects... " />
-            <marker date="1492883370364" expanded="true" signature="576:615" ph="INSERT INTO subjects... " />
-            <marker date="1492883370364" expanded="true" signature="576:617" ph="INSERT INTO subjects... " />
-            <marker date="1492883370364" expanded="true" signature="936:1033" ph="INSERT INTO pages" />
+            <marker date="1492884863840" expanded="true" signature="614:651" ph="INSERT INTO subjects... " />
+            <marker date="1492884863840" expanded="true" signature="614:653" ph="INSERT INTO subjects... " />
+            <marker date="1492884863840" expanded="true" signature="614:655" ph="INSERT INTO subjects... " />
+            <marker date="1492884863840" expanded="true" signature="1008:1105" ph="INSERT INTO pages" />
+            <marker date="1492884863840" expanded="true" signature="1434:1465" ph="SELECT menun... pages" />
           </folding>
         </state>
       </provider>

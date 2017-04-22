@@ -24,16 +24,31 @@ class DatabaseConnections
      * @param $position
      * @param $visibility
      */
-    public function insertASubject($subjectID, $menuName,
+    public function insertASubject($menuName,
                                    $position, $visibility)
     {
-        $insertionQuery = "INSERT INTO subjects VALUES(NULL,?,?,".$visibility.")";
+        $insertionQuery = "INSERT INTO subjects VALUES(NULL,?,?,?);";
         $stmt = ($this->databaseConnection)->prepare($insertionQuery);
-        $stmt->bind_param("si",$menuName,$position);
+        $stmt->bind_param("sii",$menuName,$position,$visibility);
         $stmt->execute();
         $stmt->close();
     }
 
+    public function insertAPage($subjectID,$menuName,$position
+    ,$visibility,$content)
+    {
+        $insertionQuery = "INSERT INTO
+                            pages VALUES(
+                            NULL,?,?,?,?,?);
+                            ";
+        $stmt = ($this->databaseConnection)->prepare($insertionQuery);
+        $stmt->bind_param("isiis",$subjectID,$menuName,$position,$visibility,
+            $content);
+        $stmt->execute();
+        $stmt->close();
+
+
+    }
 
 
     public function __destruct()

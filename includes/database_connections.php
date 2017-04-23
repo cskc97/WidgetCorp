@@ -14,9 +14,12 @@ class DatabaseConnections
 
     public function __construct()
     {
-       $this->$databaseConnection = new mysqli(DB_HOST,DB_USER,DB_PASSWORD,DB_DATABASE);
+       $this->databaseConnection = new mysqli(DB_HOST,DB_USER,DB_PASSWORD,DB_DATABASE);
 
     }
+
+
+
 
     /**
      * @param $subjectID
@@ -56,25 +59,43 @@ class DatabaseConnections
 
     public function queryNamesOfPages()
     {
-     $sqlQuery = "SELECT menuname
+     $sqlQuery = "SELECT menu_name
      FROM pages;";
      $returnArray[]=null;
+
      $result=$this->databaseConnection->query($sqlQuery);
      while($row=$result->fetch_assoc())
      {
-         $returnArray[]=$row["menuname"];
+         $returnArray[]=$row["menu_name"];
+         echo "<pre>".$row["menu_name"]."</pre>";
      }
-     echo "<pre>".$returnArray."</pre>";
+
 
      return $returnArray;
 
+    }
+
+    public function queryNamesOfSubjects()
+    {
+        $sqlQuery="SELECT menu_name FROM subjects; ";
+        $returnArray[] = null;
+
+        $result = $this->databaseConnection->query($sqlQuery);
+        while($row=$result->fetch_assoc())
+        {
+            $returnArray[]=$row["menu_name"];
+            echo "<pre>".$row["menu_name"]."</pre>";
+        }
+
+
+        return $returnArray;
     }
 
 
     public function __destruct()
     {
 
-        if(isset($this->$connection))
+        if(isset($this->databaseConnection))
         {
             $this->databaseConnection->close();
         }

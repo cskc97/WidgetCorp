@@ -6,6 +6,19 @@
     <title>untitled</title>
 </head>
 <body>
+<?php
+require_once('..\includes\database_connections.php');
+
+$databaseConnection = new DatabaseConnections();
+$databaseConnection->insertASubject("About Us",1,1);
+
+$databaseConnection->queryNamesOfSubjects();
+
+
+
+?>
+
+
 
 </body>
 </html>
